@@ -1089,4 +1089,28 @@ footer {
 
     .content-box img {
         width: 100%; /* Imagen ocupa todo el ancho disponible */
+        margin-bottom: 1rem;
+    }
 
+    #ali {
+        font-size: 1.2rem;
+        height: 3rem;
+        width: 12rem;
+        left: 50%;
+        transform: translateX(-50%);
+        margin-top: 1rem;
+    }
+    header .navbar ul li a {
+        font-size: 1.4rem; /* Reduce el tamaño de fuente ligeramente */
+        padding: 1rem; /* Aumenta el padding para clicabilidad */
+    }
+    .nosotros .box-container .box,
+    .servicios .box-container .box {
+        width: 100%; /* Ocupa ancho completo */
+        margin: 1rem auto;
+    }
+
+    footer {
+        font-size: 1.4rem; /* Reduce tamaño del texto */
+    }
+}
