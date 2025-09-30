@@ -897,4 +897,51 @@ footer {
         overflow-y: auto; /* Habilita el scroll vertical si es necesario */
     }
     header.navbar ul{
+        justify-content: space-between;
+    }
+    header.navbar ul li a{
+        font-size: 1.6rem; /* Reduce ligeramente el tamaño del texto */
+    }
+    .logo img {
+        max-width: 70px; /* Reduce el tamaño del logo */
+    }
+    header .navbar ul li a {
+        font-size: 1.8rem; /* Tamaño más pequeño para enlaces */
+    }
+    .home .content h1 {
+        font-size: 4rem; /* Reduce título */
+    }
+    .top-right-image {
+        top: 2rem;
+        left: 50%; /* Centra horizontalmente */
+        transform: translateX(-50%); /* Ajusta al centro */
+        width: 80%; /* Reduce aún más el ancho */
+    }
+    .content-box {
+        max-width: 70%; /* Más grande en pantallas medianas */
+        bottom: 1.5rem;
+        right: 1.5rem;
+        padding: 1.5rem;
+    }
+
+    .content-box h1 {
+        font-size: 4rem;
+    }
+
+    .content-box p {
+        font-size: 1.6rem;
+    }
+    .nosotros .box-container,
+    .servicios .box-container {
+        flex-direction: column; /* Cambia a disposición vertical */
+        align-items: center; /* Centra los elementos */
+    }
+}
+
+
+/* Pantallas pequeñas (Tablets): Ancho <= 768px */
+@media (max-width: 768px) {
+    html {
+        font-size: 55%; /* Escala general más pequeña */
+    }
 
