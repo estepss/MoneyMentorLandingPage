@@ -993,3 +993,52 @@ footer {
     header .navbar.nav-toggle {
         display: flex; /* Muestra el menú cuando está activo */
 
+    }
+
+    header .navbar ul {
+        width: 100%;
+        text-align: center;
+    }
+
+    header .navbar ul li {
+        margin: 1rem 0;
+    }
+
+    header .navbar ul li a {
+        font-size: 1.6rem; /* Reduce el tamaño de fuente ligeramente */
+        padding: 0.5rem; /* Aumenta el padding para clicabilidad */
+    }
+    .home .content h1 {
+        font-size: 4rem;
+        padding: 2rem;
+    }
+
+    .home .content p {
+        font-size: 1.2rem; /* Más pequeño para lectura cómoda */
+        padding: 1rem 2rem;
+    }
+
+    #ali {
+        left: 2rem;
+        font-size: 1.5rem;
+        height: 4rem;
+        width: 18rem;
+    }
+
+    .nosotros .box-container,
+    .servicios .box-container {
+        flex-direction: column; /* Cambia a columnas */
+    }
+
+    .content-box {
+        width: 90%;
+        padding: 1rem;
+        font-size: 1.5rem; /* Ajusta tamaño general */
+    }
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer-logo-description {
+        text-align: center;
+
