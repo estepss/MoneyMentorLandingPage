@@ -753,4 +753,52 @@ header .logo {
 
 .content-box {
     position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: #179BAE;
+    padding: 2rem;
+    border-radius: 8px;
+    color: white;
+    min-height: 550px;
+    max-width: 1900px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.content-box h1 {
+    font-size: 5rem;
+    margin-bottom: 1rem;
+}
+
+.content-box p {
+    font-size: 2.3rem;
+    line-height: 1.5;
+    margin-bottom: 1.5rem;
+}
+
+.content-box img {
+    width: 400px;
+    margin-bottom: 1.5rem;
+}
+footer {
+    background-color: #2B3D49; /* Fondo oscuro */
+    color: #fff; /* Texto blanco */
+    padding: 20px 0;
+    text-align: center;
+}
+.footer-container {
+    width: 90%;
+    margin: 0 auto;
+}
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Asegura que los elementos se adapten */
+    gap: 20px; /* Espaciado entre columnas */
+    margin-bottom: 9%;
+    margin-top: 2%;
+}
+.footer-logo-description {
+    flex: 1;
+    min-width: 250px;
+    text-align: left;
 
