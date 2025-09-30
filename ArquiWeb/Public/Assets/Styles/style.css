@@ -1,1 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;1,200;1,300;1,400&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    outline: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*::selection {
+    background: #FBBD5D;
+    color: #fff;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+body {
+    background-color: white;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: auto;
+    max-width: 80px;
+    height: auto;
+}
+
+.heading {
+    font-size: 4rem;
+    color: #FBBD5D;
+    text-align: center;
+    padding: 6rem 1rem 0 0;
+    letter-spacing: .2rem;
+    font-weight: 600;
+}
+
+.title {
+    padding: 0 1rem;
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 400;
+    color: #fff;
+}
+
+header .logo {
+
+    width: 5px;
+    /* Anchura de la imagen del logo */
+    height: 5px;
+    /* Altura ajustada automáticamente para mantener la proporción */
+}
+
+header .logo img {
+    max-width: 80px; /* Ajusta el tamaño del logo */
+    height: auto; /* Mantiene la proporción */
+}
+header .fa-bars {
+    font-size: 3rem;
+    color: #FF8343;
+    cursor: pointer;
+    display: none;
+    transition: .2s;
+}
+
+header {
+    width: 100%;
+    height: 90px;
+    /* Altura del banner */
+    background: #2B3D49;
+    /*color del banner*/
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 3rem;
+    z-index: 1000;
+    transition: .2s;
+}
+
+header .navbar {
+    display: flex; /* Muestra elementos en línea */
+    justify-content: space-between; /* Espacia los elementos */
+    align-items: center; /* Centra verticalmente */
+}
+
+header .navbar ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+}
+
+header .navbar ul li {
+    margin: 0 1rem;
+}
+
+header .navbar ul li a {
+    font-size: 2rem;
+    color: #fff;
+    transition: .2s;
+}
+
+header .navbar ul li .active,
+header .navbar ul li a:hover {
+    color: #FF8343;
+}
+
+
+header .logo {
+    font-size: -5rem;
+    /* Tamaño del logo */
+    text-transform: uppercase;
+    width: 2000px;
+    /* Anchura del logo */
+    height: 150px;
+    /* Altura ajustada automáticamente para mantener la proporción */
+}
+
+/* Capa semi-transparente encima del fondo */
+.home {
+    min-height: 100vh;
+    background: linear-gradient(rgba(165, 165, 165, 0.267), rgba(165, 165, 165, 0.267)), 
+                url('../Img/fondo_landing.jpg') no-repeat center center fixed;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    z-index: 0;
+    overflow: hidden;
+    position: relative;
+}
+
+.home .content {
+    display: flex;
+    align-items: left;
+    justify-content: center;
+    flex-flow: column;
+    padding-top: 20rem;
+    z-index: 2;
+}
+    
+
+.home .content h1 {
+    font-size: 6rem;
+    color: #fff;
+    padding: 0 1rem;
+    text-align: left;
+    padding: 1rem 25rem;
+}
+
+.home .content p {
+    font-size: 2rem;
+    color: white;
+    padding: 1rem 25rem;
+}
+
+
+#ali {
+    position: relative;
+    left: 25rem;
+    height: 5rem;
+    width: 20rem;
+    border-radius: 1rem;
+    background: #179BAE;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+    transition: .2s;
+    box-shadow: 0 .3rem 1rem #179BAE;
+    margin: 3rem 0;
+    border: none;
+}
+
+.download {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    padding: 2rem;
+}
+
+.top-right-image {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    width: 100%; /* Asegura que ocupe todo el ancho disponible */
+    max-width: 1400px; /* Tamaño máximo */
+    height: auto; /* Mantiene la proporción */
+    border-radius: 8px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.content-box {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: #179BAE;
+    /* */
+    padding: 2rem;
+    border-radius: 8px;
+    color: white;
+    min-height: 550px;
+    max-width: 1900px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.content-box h1 {
+    font-size: 5rem;
+    margin-bottom: 1rem;
+}
+
+.content-box p {
+    font-size: 2.3rem;
+    line-height: 1.5;
+    margin-bottom: 1.5rem;
+}
+
+.content-box img {
+    width: 400px;
+    margin-bottom: 1.5rem;
+}
+
+
+.home .content button:hover {
+    background: none;
+    border: .2rem solid #FBBD5D;
+}
+
+#nosotros {
+    scroll-margin-top: 89px;
+}
+
+.nosotros {
+    text-align: center;
+    margin: 100px 0;
+}
+
+.nosotros h2 {
+    font-size: 5rem;
+    margin-top: -70px;
+    padding-top: 2rem;
+    text-align: center;
+    color: #0A2B59;
+}
+
+.nosotros .content p {
+    font-size: 1.5rem;
+    color: #0A2B59;
+    margin-bottom: 2rem;
+    margin-top: 10px;
+
+}
+
+.nosotros .box-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+    margin-top: 5rem;
+}
+
+.nosotros .box-container .box {
+    height: 36rem;
+    width: 35rem;
+    background: white;
+    text-align: center;
 
