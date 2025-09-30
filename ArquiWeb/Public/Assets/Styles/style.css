@@ -944,4 +944,52 @@ footer {
     html {
         font-size: 55%; /* Escala general más pequeña */
     }
+    header .navbar {
+        display: none; /* Oculta la barra de navegación por defecto */
+        position: absolute;
+        top: 90px; /* Debajo del header */
+        left: 0;
+        width: 100%;
+        flex-direction: column; /* Enlaces en columna */
+        background: #2B3D49;
+        top: 70px; /* Ajusta la posición según el header */
+        max-height: 80vh;
+        overflow-y: auto; /* Habilita el scroll vertical si es necesario */
+
+    }
+    header .fa-bars,  header.fa-times {
+        display: block; /* Activa el menú hamburguesa */
+        font-size: 2.5rem; /* Ajusta el tamaño del ícono */
+        color: #FF8343; /* Color del ícono */
+        position: absolute; /* Opcional: para alinearlo */
+        right: 2rem; /* Alineación a la derecha */
+        top: 2rem; /* Alineación a la parte superior */
+        cursor: pointer;
+    }
+    .top-right-image {
+        top: 2rem;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 70%; /* Se reduce a 70% en tablets */
+    }
+    .content-box {
+        position: relative; /* Cambia a posición relativa para mayor flexibilidad */
+        bottom: auto; /* Resetea la posición */
+        right: auto;
+        max-width: 90%; /* Asegura que ocupe casi todo el ancho */
+        margin: 2rem auto; /* Centra horizontalmente */
+        padding: 1.5rem;
+    }
+
+    .content-box h1 {
+        font-size: 3.5rem;
+        text-align: center; /* Centra el texto */
+    }
+
+    .content-box p {
+        font-size: 1.6rem;
+        text-align: center;
+    }
+    header .navbar.nav-toggle {
+        display: flex; /* Muestra el menú cuando está activo */
 
