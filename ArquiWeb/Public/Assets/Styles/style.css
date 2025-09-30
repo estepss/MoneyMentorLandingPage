@@ -47,3 +47,51 @@
     color: black;
     margin-bottom: 2rem;
     margin-top: 10px;
+}
+
+.servicios .box-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+    margin-top: 5rem;
+}
+
+.servicios .box-container .box {
+    height: 36rem;
+    width: 35rem;
+    background: white;
+    text-align: center;
+    border-radius: 1rem;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 2rem;
+    cursor: pointer;
+}
+
+.servicios .box-container .box img {
+    max-width: 95%;
+    max-height: 95%;
+}
+
+.servicios .box-container .box h3 {
+    font-size: 2rem;
+    color: #0A2B59;
+    transition: .2s;
+}
+
+.servicios .box-container .box p {
+    font-size: 1.3rem;
+    padding: .7rem 2rem;
+    color: black;
+}
+
+.servicios .box-container .box:hover h3 {
+    color: #FBBD5D;
+}
+
+#review {
+    scroll-margin-top: 89px;
+}
+
+.review {
+    background: white;
