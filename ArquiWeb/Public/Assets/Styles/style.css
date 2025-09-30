@@ -849,4 +849,52 @@ footer {
     margin: 0 10px;
 }
 .footer-bar a:hover {
+    text-decoration: underline;
+}
+/* RESPONSIVE DESIGN */
+
+/* Pantallas grandes: Ancho <= 1200px */
+@media (max-width: 1200px) {
+    header.navbar{
+        justify-content: space-between;
+        overflow-y: auto; /* Habilita el scroll vertical si es necesario */
+    }
+    .home .content h1 {
+        font-size: 5rem;
+    }
+    #ali {
+        left: 10rem;
+        font-size: 1.8rem;
+    }
+    .top-right-image {
+        top: 2rem; /* Aumenta el margen superior */
+        left: 1rem; /* Mantiene la posición */
+        width: 90%; /* Ocupa el 90% del ancho del contenedor */
+    }
+    .content-box {
+        max-width: 50%; /* Ocupa el 50% del ancho del contenedor */
+        bottom: 2rem; /* Margen inferior */
+        right: 2rem; /* Margen derecho */
+    }
+
+    .content-box h1 {
+        font-size: 4.5rem;
+    }
+
+    .content-box p {
+        font-size: 2rem;
+    }
+    .nosotros .box-container,
+    .servicios .box-container {
+        flex-wrap: wrap; /* Ajusta las cajas a varias filas */
+    }
+}
+
+/* Pantallas medianas: Ancho <= 992px */
+@media (max-width: 992px) {
+    header.navbar{
+        justify-content: space-between;
+        overflow-y: auto; /* Habilita el scroll vertical si es necesario */
+    }
+    header.navbar ul{
 
