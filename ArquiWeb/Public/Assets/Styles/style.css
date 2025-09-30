@@ -610,4 +610,51 @@ body {
 .heading {
     font-size: 4rem;
     color: #FBBD5D;
+    text-align: center;
+    padding: 6rem 1rem 0 0;
+    letter-spacing: .2rem;
+    font-weight: 600;
+}
+
+.title {
+    padding: 0 1rem;
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 400;
+    color: #fff;
+}
+
+header .logo {
+    width: 5px;
+    height: 5px;
+}
+
+header .fa-bars {
+    font-size: 3rem;
+    color: #FF8343;
+    cursor: pointer;
+    display: none;
+    transition: .2s;
+}
+
+header .fa-times { /* Aplica tanto al menú hamburguesa como al cerrar */
+    position: absolute;
+    right: 2rem; /* Alinea hacia la derecha */
+    top: 50%; /* Centra verticalmente */
+    transform: translateY(-50%); /* Ajusta el centro vertical */
+    font-size: 2.5rem; /* Tamaño del ícono */
+    color: #FF8343; /* Color del ícono */
+    cursor: pointer; /* Agrega interacción */
+}
+
+header {
+    display: flex;
+    justify-content: space-between; /* Separa el logo y el menú hamburguesa */
+    align-items: center; /* Centra verticalmente todos los elementos */
+    padding: 1rem 2rem; /* Espaciado interno */
+    background: #2B3D49; /* Color del header */
+    position: fixed; /* Mantiene el header fijo al hacer scroll */
+    width: 100%; /* Asegura que ocupe el ancho completo */
+    z-index: 1000; /* Prioridad sobre otros elementos */
+}
 
