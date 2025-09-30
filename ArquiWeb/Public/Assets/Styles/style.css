@@ -95,3 +95,52 @@
 
 .review {
     background: white;
+        text-align: center;
+    padding-top: 3rem;
+}
+
+.review h2 {
+    font-size: 5rem;
+    color: #0A2B59;
+    margin-bottom: 2rem;
+    margin-top: -25px;
+}
+
+.review p {
+    font-size: 1.5rem;
+    color: #000;
+    margin-bottom: 3rem;
+}
+
+.review .box-container {
+    display: flex;
+    justify-content: center;
+    padding-top: 4rem;
+    flex-wrap: wrap;
+}
+
+.review .box-container .box {
+    background-color: #F6F6F6;
+    border-radius: 8px;
+    box-shadow: 0px 4px 12px rgba(56, 56, 56, 0.1);
+    padding: 1.5rem;
+    text-align: center;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2.5rem; 
+    border: 2px #b3b3b3; /* Borde de 2px en color negro */
+}
+
+.review .box-container .box img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-bottom: 1rem;
+}
+
+.review .box-container .box h3 {
+    font-size: 2rem;
+    color: #00BFB2;
+
