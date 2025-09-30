@@ -216,3 +216,140 @@
         </div>
 
     </div>
+        <div class="faq-more">
+        <button onclick="window.location.href='#'">Ver más</button>
+    </div>
+</section>
+
+<section class="download" id="download">
+    <img src="ArquiWeb/Public/Assets/Img/descargarApp1.jpeg" alt="Imagen superior derecha" class="top-right-image">
+    <div class="content-box">
+        <h1>Descarga MoneyMentor y mejora tus <br>finanzas</h1>
+        <p>Accede a herramientas avanzadas de planificación financiera y alertas en tiempo real directamente desde tu <br>
+            celular. Disponible para iOS y Android, MoneyMentor te guía en cada paso para que puedas administrar tus <br>
+            finanzas con confianza. ¡Descargala gratis y comienza a tomar control de tu futuro financiero hoy mismo!</p>
+        <img src="ArquiWeb/Public/Assets/Img/decargarApp2.png" alt="Google Play">
+    </div>
+</section>
+
+
+<section class="contact" id="contact">
+
+    <h2 class="heading">Contacto</h2>
+    <p>¿Tienes preguntas o necesitas asistencia? Ponte en contacto con el equipo de MoneyMentor. 
+        Estamos aquí para ayudarte.</hp>
+    <div class="row">
+        <div class="form-container">
+
+            <form action="">
+                <input type="text" placeholder="Nombre">
+                <input type="email" placeholder="Correo">
+                <input type="number" placeholder="Telefono">
+                <textarea cols="15" rows="5" placeholder="Mensaje"></textarea >
+                <input type="submit" value="Enviar">        
+            </form>
+
+        </div>
+    </div>
+
+</section>
+
+<footer>
+    <div class="footer-container">
+        <div class="footer-content">
+            <!-- Logo y descripción -->
+            <div class="footer-logo-description">
+                <img src="ArquiWeb/Public/Assets/Img/logomm.png" alt="MoneyMentor Logo" class="footer-logo">
+                <p>
+                    Con MoneyMentor, gestiona tus finanzas con confianza y seguridad en cada decisión que tomas. 
+                    Tu bienestar financiero es nuestra prioridad, 24/7.
+                </p>
+            </div>
+            <!-- Secciones -->
+            <div class="footer-sections">
+                <h3>Secciones</h3>
+                <ul>
+                    <li><a href="#">Sobre Nosotros</a></li>
+                    <li><a href="#">Preguntas Frecuentes</a></li>
+                    <li><a href="#">Recursos</a></li>
+                    <li><a href="#">Noticias</a></li>
+                </ul>
+            </div>
+            <!-- Redes Sociales -->
+            <div class="footer-social">
+                <h3>Redes Sociales</h3>
+                <ul>
+                    <li><a href="#"><i class="fab fa-facebook"></i> @moneymentor</a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i> @moneymentor</a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i> @moneymentor</a></li>
+                    <li><a href="#"><i class="fab fa-linkedin"></i> Money Mentor</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- Barra inferior -->
+        <div class="footer-bar">
+            <a href="#">Políticas de Privacidad</a>
+            <span>|</span>
+            <a href="#">Términos de Servicios</a>
+        </div>
+    </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<script>
+    const menuToggle = document.querySelector('.fa-bars');
+    const menuClose = document.querySelector('.fa-times');
+    const navbar = document.querySelector('.navbar');
+
+    menuToggle.addEventListener('click', () => {
+    navbar.classList.add('nav-toggle');
+    menuToggle.style.display = 'none';
+    menuClose.style.display = 'block';
+    });
+
+    menuClose.addEventListener('click', () => {
+    navbar.classList.remove('nav-toggle');
+    menuToggle.style.display = 'block';
+    menuClose.style.display = 'none';
+    });
+
+    $(document).ready(function() {
+
+        $('.fa-bars').click(function() {
+
+            $(this).toggleClass('fa-times');
+            $('.navbar').toggleClass('nav-toggle');
+
+        });
+
+        $(window).on('scroll load', function() {
+
+            $('.fa-bars').removeClass('fa-times');
+            $('.navbar').removeClass('nav-toggle');
+
+            $('section').each(function() {
+
+                var id = $(this).attr('id');
+                var height = $(this).height();
+                var offset = $(this).offset().top -200;
+                var top = $(window).scrollTop();
+
+                if(top >= offset && top < offset + height) {
+                    $('.navbar ul li a').removeClass('active');
+                    $('.navbar').find('[href="#'+id+'"]').addClass('active');
+                }
+
+            });
+
+        });
+
+    });
+
+</script>
+
+
+
+</body>
+</html>
+
