@@ -1041,4 +1041,52 @@ footer {
     }
     .footer-logo-description {
         text-align: center;
+    }
+    .footer-sections,
+    .footer-social {
+        text-align: center;
+    }
+}
+
+/* Pantallas móviles: Ancho <= 576px */
+@media (max-width: 576px) {
+    .home .content h1 {
+        font-size: 3rem; /* Reduce títulos */
+        text-align: center;
+        padding: 0.5rem;
+    }
+
+    .home .content p {
+        font-size: 1.3rem; /* Texto más pequeño */
+        line-height: 1.6; /* Espaciado adecuado */
+        text-align: center;
+        padding: 0.5rem;
+    }
+    .top-right-image {
+        top: 1rem; /* Reduce el margen superior */
+        left: 50%;
+        transform: translateX(-50%);
+        width: 90%; /* Más pequeño para móviles */
+    }
+    header .navbar {
+        overflow-y: auto; /* Habilita el scroll vertical si es necesario */
+    }
+    .content-box {
+        max-width: 95%; /* Ocupa casi todo el ancho en móviles */
+        padding: 1rem;
+        margin: 1rem auto; /* Centra en dispositivos móviles */
+    }
+
+    .content-box h1 {
+        font-size: 3rem; /* Reduce el tamaño del título */
+        text-align: center;
+    }
+
+    .content-box p {
+        font-size: 1.4rem; /* Texto más pequeño */
+        text-align: center;
+    }
+
+    .content-box img {
+        width: 100%; /* Imagen ocupa todo el ancho disponible */
 
