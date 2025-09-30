@@ -657,4 +657,52 @@ header {
     width: 100%; /* Asegura que ocupe el ancho completo */
     z-index: 1000; /* Prioridad sobre otros elementos */
 }
+header .navbar ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+}
+
+header .navbar ul li {
+    margin: 0 1rem;
+}
+
+header .navbar ul li a {
+    font-size: 2rem;
+    color: #fff;
+    transition: .2s;
+}
+
+header .navbar ul li .active,
+header .navbar ul li a:hover {
+    color: #FF8343;
+}
+
+header .logo {
+    font-size: -5rem;
+    text-transform: uppercase;
+    width: 2000px;
+    height: 150px;
+}
+
+/* Capa semi-transparente encima del fondo */
+.home {
+    min-height: 100vh;
+    background: linear-gradient(rgba(165, 165, 165, 0.267), rgba(165, 165, 165, 0.267)), 
+                url('../Img/fondo_landing.jpg') no-repeat center center fixed;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    z-index: 0;
+    overflow: hidden;
+    position: relative;
+}
+
+.home .content {
+    display: flex;
+    align-items: left;
+    justify-content: center;
+    flex-flow: column;
+    padding-top: 20rem;
 
