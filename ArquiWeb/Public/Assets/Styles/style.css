@@ -129,7 +129,7 @@ header .logo {
 .home {
     min-height: 100vh;
     background: linear-gradient(rgba(165, 165, 165, 0.267), rgba(165, 165, 165, 0.267)), 
-                url('../Img/fondo_landing.jpg') no-repeat center center fixed;
+                url('ArquiWeb/Public/Assets/Img/fondo_landing.jpg') no-repeat center center fixed;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
